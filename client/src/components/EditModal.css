@@ -1,0 +1,101 @@
+.edit {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.47);
+	display: flex;
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+}
+
+.edit_main {
+	height: 300px;
+	width: 600px;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 118px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border-radius: 15px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 10px;
+	border: 1px solid whitesmoke;
+}
+
+.edit_save {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.edit_save > h4 {
+	color: white;
+	margin-left: 50px;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.save {
+	padding: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 20px;
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+.edit_photos {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.edit_profile-img {
+	border-radius: 50px;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	border: 1px solid black;
+}
+.edit_header-img {
+	border-radius: 10px;
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.edit_name {
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid gray;
+	padding: 10px;
+	font-size: 1.2rem;
+	font-weight: 500;
+	background-color: black;
+	color: white;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.edit_main {
+		width: 80%;
+		height: 60vh;
+	}
+}

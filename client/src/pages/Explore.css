@@ -1,0 +1,62 @@
+.explore {
+	height: auto;
+	min-height: 100vh;
+	width: 75%;
+	float: right;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+.explore_main {
+	width: 600px;
+	height: auto;
+	background-color: rgb(185, 13, 13);
+	display: flex;
+	justify-content: center;
+	position: relative;
+	background-color: black;
+	margin-top: 10px;
+}
+
+.explore_input {
+	width: 80%;
+	cursor: pointer;
+}
+.trends {
+	width: 600px;
+	height: 150vh;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.trends > img {
+	width: 360px;
+	height: 360px;
+}
+
+.explore_btn {
+	width: 50px;
+	padding: 5px;
+	border: none;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+	.explore {
+		width: 85%;
+	}
+}
+@media screen and (max-width: 650px) {
+	.explore {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.explore_input {
+		width: 50%;
+	}
+}

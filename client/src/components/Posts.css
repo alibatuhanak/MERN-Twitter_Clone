@@ -1,0 +1,20 @@
+.posts {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.post_profile {
+	width: 100%;
+}
+
+.post_image {
+	align-self: center;
+	margin-right: 120px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}

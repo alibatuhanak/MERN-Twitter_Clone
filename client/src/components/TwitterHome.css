@@ -1,0 +1,67 @@
+.twitter_section {
+	background-color: rgb(4, 4, 4);
+	min-height: 100vh;
+	font-size: 3rem;
+	width: 75%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.twitter_home {
+	height: 12vh;
+	width: 600px;
+	background-color: rgba(0, 0, 0, 1);
+	position: fixed;
+	color: aliceblue;
+	padding: 20px;
+	font-size: 2rem;
+	border-right-width: 1px;
+	border-right-color: whitesmoke;
+	border-right-style: solid;
+	border-bottom: 1px rgba(245, 245, 245, 0.497) solid;
+	z-index: 10;
+}
+
+.transparent {
+	background-color: rgba(0, 0, 0, 0.615);
+}
+
+.tweetPost {
+	margin-top: 12vh;
+	width: 600px;
+	height: auto;
+	min-height: 100vh;
+	/*!home un rengisni değişritr rgba*/
+	background-color: black;
+	border-right-width: 1px;
+	border-right-color: whitesmoke;
+	border-right-style: solid;
+}
+
+@media screen and (max-width: 1000px) {
+	.twitter_section {
+		width: 85%;
+	}
+	.twitter_home {
+		width: 500px;
+	}
+	.tweetPost {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.twitter_section {
+		/* 
+		 */
+		width: 100%;
+	}
+	.twitter_home {
+		width: 100%;
+	}
+	.tweetPost {
+		width: 100%;
+	}
+}

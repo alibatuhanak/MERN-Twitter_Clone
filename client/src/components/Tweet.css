@@ -1,0 +1,99 @@
+.tweet {
+	width: 100%;
+	position: relative;
+	min-height: 20vh;
+	height: auto;
+	border-bottom: 1px solid whitesmoke;
+	display: flex;
+	flex-direction: column;
+}
+.tweet_profile {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	border-radius: 50px;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+.tweet_text {
+	resize: none;
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 10px;
+	padding-left: 100px;
+	padding-top: 30px;
+	background-color: black;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+}
+.tweet_text:focus {
+	outline: none;
+}
+
+.file_img-section {
+	position: relative;
+	width: auto;
+	height: auto;
+	align-self: center;
+}
+.post_img {
+	border-radius: 20px;
+	align-self: center;
+	width: 300px;
+	height: 400px;
+	margin-bottom: 60px;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+.tweet_btn {
+	padding: 12px 24px;
+	border-radius: 50px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: whitesmoke;
+	background-color: blueviolet;
+	border: none 0;
+	cursor: pointer;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+.tweet_btn:hover {
+	background-color: rgba(94, 11, 102, 0.914);
+}
+
+.tweet_icons {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 40px;
+	bottom: 10px;
+	left: 120px;
+	color: blueviolet;
+}
+.tweet_icons > input {
+	display: none;
+}
+
+.tweet_icons > label {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+	.tweet {
+		min-width: 350px;
+	}
+}
+
+.epr-emoji-category-label {
+	font-size: 1rem;
+}

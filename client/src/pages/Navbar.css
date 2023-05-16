@@ -1,0 +1,148 @@
+.navbar_section {
+	width: 25%;
+	height: 100vh;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	min-width: 250px;
+	position: fixed;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: whitesmoke;
+	z-index: 10;
+}
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 100%;
+	width: 83%;
+}
+
+.navbar_link {
+	color: gray;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-radius: 50px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 45px;
+	position: relative;
+}
+.navbar_link.active {
+	color: azure;
+}
+
+.twitter {
+	width: 50px;
+	height: 50px;
+}
+.twitter:hover {
+	background-color: rgba(109, 109, 109, 0.359);
+}
+.twitter_hamburger {
+	display: none;
+}
+
+@media screen and (min-width: 1000px) {
+	.navbar_link:hover {
+		background-color: rgba(109, 109, 109, 0.156);
+	}
+}
+@media screen and (max-width: 1000px) {
+	.navbar_section {
+		width: 15%;
+		height: 100%;
+		position: fixed;
+		padding: 0;
+		min-width: auto;
+	}
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.navbar_link > h4 {
+		display: none;
+	}
+	.navbar_link {
+		margin-top: 15px;
+		padding: 0;
+	}
+
+	.twitter {
+		width: 40px;
+		height: 40px;
+	}
+	.icon_div {
+		width: 50px;
+		height: 50px;
+		padding: 25px 30px 25px 25px;
+		border-radius: 50px;
+	}
+
+	.icon_div:hover {
+		background-color: rgba(109, 109, 109, 0.359);
+	}
+}
+@media screen and (max-width: 650px) {
+	.navbar_section {
+		left: -100px;
+		transition: 0.3s ease-in;
+	}
+	.navbar_section.active {
+		display: block;
+		left: 0;
+		z-index: 30;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(6, 5, 5, 0.885);
+		align-items: center;
+		transition: 0.3s ease-in;
+	}
+
+	.navbar.active {
+		width: 100%;
+	}
+
+	.twitter_hamburger {
+		display: block;
+		position: fixed;
+	}
+}
+
+/* @media screen and (max-width: 550px) {
+	.navbar_section {
+		width: 15%;
+		padding: 0;
+		min-width: auto;
+	}
+	.navbar_link > h4 {
+		display: none;
+	}
+	.navbar_link {
+		margin-top: 15px;
+		padding: 0;
+	}
+
+	.twitter {
+		width: 40px;
+		height: 40px;
+	}
+	.icon_div {
+		width: 50px;
+		height: 50px;
+		padding: 25px 30px 25px 25px;
+		border-radius: 50px;
+	}
+
+	.icon_div:hover {
+		background-color: rgba(109, 109, 109, 0.359);
+	}
+} */

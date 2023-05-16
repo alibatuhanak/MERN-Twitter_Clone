@@ -1,0 +1,157 @@
+.profile_page {
+	height: auto;
+	width: 75%;
+	background-color: black;
+	float: right;
+}
+
+.profile_section {
+	height: auto;
+	min-height: 100vh;
+	width: 600px;
+	background-color: black;
+	border-right: solid 1px whitesmoke;
+}
+.profile_info {
+	width: 100%;
+	height: 55vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.arrow_section {
+	border-radius: 50%;
+	padding: 6px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.arrow_section:hover {
+	background-color: rgba(48, 42, 42, 0.682);
+}
+.profile_main-name {
+	margin-left: 50px;
+	width: auto;
+	height: 8vh;
+	padding: 7px;
+	color: white;
+}
+.profile_main-name > p {
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: gray;
+}
+.names {
+	height: 17vh;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 30px;
+	padding: 7px;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.photos_section {
+	position: relative;
+	height: auto;
+	width: 100%;
+	user-select: none;
+	-webkit-user-drag: none;
+	pointer-events: none;
+}
+.header_photo {
+	width: 100%;
+	height: 24vh;
+	object-fit: fill;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+.profile_photo {
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+	overflow: hidden;
+	border-radius: 100%;
+	position: absolute;
+	left: 20px;
+	bottom: -50px;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.name {
+	font-size: 1.2rem;
+}
+.names > :last-child {
+	font-size: 1rem;
+	color: grey;
+}
+
+.edit_btn {
+	position: absolute;
+	bottom: 80px;
+	right: 50px;
+	background-color: black;
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 10px;
+	border-radius: 15px;
+	border: whitesmoke 1px solid;
+	cursor: pointer;
+}
+.edit_btn:hover {
+	background-color: rgba(35, 34, 34, 0.596);
+}
+.choose_section {
+	display: flex;
+	height: 6vh;
+	width: 100%;
+	font-size: 1.1rem;
+	color: white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.section_1 {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.section_1.active {
+	background-color: rgba(72, 69, 69, 0.51);
+}
+
+.c1 {
+	border-right: 1px solid white;
+}
+
+.profile_likes {
+	background-color: black;
+}
+
+@media screen and (max-width: 1000px) {
+	.profile_page {
+		width: 85%;
+	}
+	.profile_section {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.profile_page {
+		width: 100%;
+	}
+	.profile_section {
+		width: 100%;
+	}
+}

@@ -1,0 +1,96 @@
+.post {
+	width: 100%;
+	min-height: 20vh;
+	height: auto;
+	border-bottom: 1px solid whitesmoke;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+}
+.post_text {
+	color: whitesmoke;
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	width: 100%;
+	height: 100%;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.post_profile {
+	max-width: 90%;
+	height: 100%;
+	display: flex;
+	margin-bottom: 30px;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.post_profile-img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 40px;
+}
+
+.post_profile > div > h6 {
+	font-size: 1rem;
+	font-weight: 600;
+	color: whitesmoke;
+}
+.post_email {
+	margin-left: 10px;
+	color: gray !important;
+	font-weight: 500 !important;
+}
+
+.post_info {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	height: auto;
+	width: 100%;
+}
+
+.post_likes {
+	height: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 20px;
+	width: 100px;
+}
+
+.like {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.post_like:hover {
+	color: rgba(244, 46, 142, 0.825) !important;
+}
+.post_bookmark:hover {
+	color: rgb(77, 77, 251) !important;
+}
+
+.count {
+	color: whitesmoke;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.post_image {
+	width: 300px;
+	height: 450px;
+}

@@ -1,0 +1,88 @@
+.register_section {
+	width: 100%;
+	height: 100%;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.register_section h3 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+.register_inputs {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.register_inputs > input {
+	width: 80%;
+	margin-bottom: 15px;
+	height: 50px;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: rgb(70, 73, 79);
+	font-size: 1.05rem;
+	padding-left: 10px;
+}
+.register_inputs > input:focus {
+	outline: none;
+}
+
+.register_button {
+	width: 80%;
+	height: 50px;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: rgb(70, 73, 79);
+	font-size: 1.05rem;
+	cursor: pointer;
+	color: aliceblue;
+	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: #070708;
+	margin-bottom: 50px;
+}
+.register_button-social {
+	width: 80%;
+	height: 50px;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: rgb(70, 73, 79);
+	cursor: pointer;
+	color: aliceblue;
+	font-size: 1rem;
+	font-weight: 600;
+	position: relative;
+}
+.btn-1 {
+	background-color: #db4437;
+}
+.btn-2 {
+	background-color: #4267b2;
+}
+
+.register_social {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25%;
+	width: 100%;
+	gap: 10px;
+}
+.register_social::before {
+	content: "";
+	width: 80%;
+	height: 2px;
+	background: gainsboro;
+
+	/* Some light styling */
+}
